@@ -8,11 +8,11 @@ public class Main {
     public static ArrayList<Estudiantes> lista = new ArrayList();
     public static ArrayList<Transportistas> listaTrans = new ArrayList();
     public static ArrayList<Clases> listaClases = new ArrayList();
-    //public static int indice;
+    public static ArrayList<Transporte> listaTransporte = new ArrayList();
+
     public static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // TODO code application logic here
         do {
             opciones(menu());
         } while (true);
@@ -42,6 +42,7 @@ public class Main {
             case 0:
                 System.exit(0);
             case 1:
+                crearClases();
                 break;
             case 2:
                 break;
@@ -54,6 +55,7 @@ public class Main {
                 crearTransportista();
                 break;
             case 6:
+                
                 break;
             case 7:
                 int opcion2=0;
@@ -143,6 +145,10 @@ public class Main {
         int codigo=sc.nextInt();
         
         listaClases.add(new Clases(nombreClase,codigo));
+    }
+    
+    public static void crearTransporte(){
+        
     }
 
     public static void listarAlumnos() {

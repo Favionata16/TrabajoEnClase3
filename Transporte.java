@@ -2,8 +2,9 @@
 package LabTc3;
 
 public class Transporte {
-    protected int placa;
-    protected String color;
+    private int placa;
+    private String color;
+    public int capacidad;
 
     public Transporte(int placa, String color) {
         this.placa = placa;
@@ -26,7 +27,19 @@ public class Transporte {
         this.color = color;
     }
 
-    
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+     public String toString(){
+
+
+        return ("Placa:"+placa+", Color"+color+", Capacidad");
+    }
     
     
     
